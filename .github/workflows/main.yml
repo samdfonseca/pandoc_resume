@@ -26,22 +26,22 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Build html
-        uses: ./
+        uses: samdfonseca/pandoc_resume@16375eef9128c2696560bba1774d79373d429168
         id: html
         with:
           target: html
       - name: Build pdf
-        uses: ./
+        uses: samdfonseca/pandoc_resume@16375eef9128c2696560bba1774d79373d429168
         id: pdf
         with:
           target: pdf
       - name: Build docx
-        uses: ./
+        uses: samdfonseca/pandoc_resume@16375eef9128c2696560bba1774d79373d429168
         id: docx
         with:
           target: docx
       - name: Build rtf
-        uses: ./
+        uses: samdfonseca/pandoc_resume@16375eef9128c2696560bba1774d79373d429168
         id: rtf
         with:
           target: rtf
