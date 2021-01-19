@@ -1,0 +1,16 @@
+name: 'Pandoc/Latex/Make'
+description: 'Pandoc core with full latex and make'
+inputs:
+  target:
+    description: Makefile target
+    required: false
+    default: ''
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  entrypoint: '/usr/bin/make'
+  args:
+    - ${{ inputs.target }}
+branding:
+  icon: 'book'
+  color: 'green'

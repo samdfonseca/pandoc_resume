@@ -1,46 +1,51 @@
-Johnny Coder
+Sam Fonseca
 ============
 
 ----
 
->  In this style, the resume starts with a blockquote, where
+>  I build systems that make data available
 >  you can briefly list your specialties, or include a salient
 >  quote. Ending a line with a backslash forces a line break.
 
 ----
 
-Education
----------
-
-2010-2014 (expected)
-:   **PhD, Computer Science**; Awesome University (MyTown)
-
-    *Thesis title: Deep Learning Approaches to the Self-Awesomeness
-     Estimation Problem*
-
-2007-2010
-:   **BSc, Computer Science and Electrical Engineering**; University of
-    HomeTown (HomeTown)
-
-    *Minor: Awesomeology*
-
 Experience
 ----------
 
-**Your Most Recent Work Experience:**
+**The New York Times: 2018-Present**
 
-Short text containing the type of work done, results obtained,
-lessons learned and other remarks. Can also include lists and
-links:
+Building data systems that enable targeted experiences on NYT
+properties. As a platform team, our clients are engineers and
+analysts that need to access analytics data in low latency
+situations, such as programatic advertising.
 
-* First item
+* Developing the [new advertising data platform](https://open.nytimes.com/to-serve-better-ads-we-built-our-own-data-program-c5e039bf247b)
+  to replace all third-party data with proprietary [first-party data](https://www.axios.com/new-york-times-advertising-792b3cd6-4bdb-47c3-9817-36601211a79d.html).
 
-* Item with [link](http://www.example.com). Links will work both in
-  the html and pdf versions.
+* Lead design and implementation of multi-tenant Data Service Request
+  automation platform for teams to manage removal of users' data.
 
-**That Other Job You Had**
+**Axial: 2017-2018**
 
-Also with a short description.
+* Taught developers various best practices for writing better tests, such as external service mocking and data-driven
+    testing.
+
+* Designed and implemented a refactoring of Axial’s core service that eliminated all database dependencies from our test
+    suite, reducing test suite execution time from ~15 minutes to ~2 minutes.
+
+**CrowdTwist: 2016-2017**
+
+* Worked full-time on end-to-end and integration level test automation.
+
+* Automated all manual regression testing for batch jobs, reducing the time needed to verify a release by a full day.
+
+**Bypass Mobile: 2014-2016**
+
+* Developed automated testing suite with a focus on testing across independent microservices and application
+    infrastructure.
+
+* Supported numerous non-traditional Android behaviors and uses, such as Ethernet connections, USB and network-based
+    printers, and multi-APK applications.
 
 Technical Experience
 --------------------
@@ -61,7 +66,7 @@ Open Source
     your idea...
 
 Programming Languages
-:   **first-lang:** Here, we have an itemization, where we only want
+:   **Go:** Here, we have an itemization, where we only want
     to add descriptions to the first few items, but still want to
     mention some others together at the end. A format that works well
     here is a description list where the first few items have their

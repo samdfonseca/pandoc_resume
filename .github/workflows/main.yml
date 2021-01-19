@@ -25,20 +25,26 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: Install build tools
-        run: sudo apt update -y && sudo apt install -y pandoc context make
-      
       - name: Build html
-        run: make html
-      
+        uses: ./
+        id: html
+        with:
+          target: html
       - name: Build pdf
-        run: make pdf
-      
+        uses: ./
+        id: pdf
+        with:
+          target: pdf
       - name: Build docx
-        run: make docx
-      
+        uses: ./
+        id: docx
+        with:
+          target: docx
       - name: Build rtf
-        run: make rtf
+        uses: ./
+        id: rtf
+        with:
+          target: rtf
       
       - name: Archive build results
         uses: actions/upload-artifact@v2
