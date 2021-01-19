@@ -26,7 +26,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Install build tools
-        run: apt update -y && apt install -y pandoc context make
+        run: sudo apt update -y && sudo apt install -y pandoc context make
       
       - name: Build html
         run: make html
