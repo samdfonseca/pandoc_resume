@@ -56,22 +56,22 @@ jobs:
           cache-to: type=local,dest=/tmp/.buildx-cache
 
       - name: Build html
-        uses: ghcr.io/samdfonseca/pandoc_resume@latest
+        uses: docker://ghcr.io/samdfonseca/pandoc_resume@latest
         id: html
         with:
           target: html
       - name: Build pdf
-        uses: ghcr.io/samdfonseca/pandoc_resume@latest
+        uses: docker://ghcr.io/samdfonseca/pandoc_resume@latest
         id: pdf
         with:
           target: pdf
       - name: Build docx
-        uses: ghcr.io/samdfonseca/pandoc_resume@latest
+        uses: docker://ghcr.io/samdfonseca/pandoc_resume@latest
         id: docx
         with:
           target: docx
       - name: Build rtf
-        uses: ghcr.io/samdfonseca/pandoc_resume@latest
+        uses: docker://ghcr.io/samdfonseca/pandoc_resume@latest
         id: rtf
         with:
           target: rtf
